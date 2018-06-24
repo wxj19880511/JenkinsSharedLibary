@@ -6,7 +6,7 @@ class Point implements Serializable {
     float x,y,z;
     def steps;
 
-    Test(steps) {this.steps = steps}
+    Point(steps) {this.steps = steps}
 
     def setX(x) {
         this.x = x
