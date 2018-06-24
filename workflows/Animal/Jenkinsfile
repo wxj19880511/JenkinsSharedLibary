@@ -13,6 +13,11 @@ node() {
     }
 
     executeWithDocker {
+
+      executeStage("Checkout Source") {
+            checkoutSrouce()
+        }
+
         executeStage("Test") {
             echo "This is only a basic test"
             sh " ls -alt"    
