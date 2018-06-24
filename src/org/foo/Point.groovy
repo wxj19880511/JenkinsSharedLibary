@@ -1,5 +1,5 @@
 // src/org/foo/Point.groovy
-package org.foo;
+package org.foo
 
 // point in 3D space
 class Point {
