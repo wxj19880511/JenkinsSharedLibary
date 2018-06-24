@@ -2,7 +2,7 @@
 package org.foo
 
 // point in 3D space
-class Point {
+class Point implements Serializable {
   float x,y,z;
 
   def setX(x) {
