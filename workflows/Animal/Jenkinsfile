@@ -8,7 +8,7 @@ node() {
         food = 'meat'
     }
 
-    executeStage {
+    executeStage("test") {
         name = "Test"
         cmd = {
             echo "This is only a basic test"
