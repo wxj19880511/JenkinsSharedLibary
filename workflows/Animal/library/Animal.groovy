@@ -4,5 +4,10 @@ class Test {
     }
 }
 
+def test() {
+    obj = new Test()
+    obj.test()
+}
+
 
 return this
