@@ -5,4 +5,8 @@ node() {
     Animal {
         food = 'meat'
     }
+
+    executeWithDocker {
+        log.warning "Please do not let it go"
+    }
 }
