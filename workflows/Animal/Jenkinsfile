@@ -5,6 +5,14 @@ node() {
          checkout([$class: 'GitSCM', branches: [[name: '*/develop']], browser: [$class: 'GithubWeb', repoUrl: 'https://github.com/wxj19880511/JenkinsSharedLibary.git'], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'ScmName', name: 'JenkinsSharedLibrary']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/wxj19880511/JenkinsSharedLibary.git']]])
     }
 
+
+    executeStage("Test load class library from frolder") {
+        // Tets the class invocation from shared library
+        def obj = org.foo.Point()
+        obj.setX(3)
+        println(obj.getX())
+    }
+
     test = new org.foo.Test()
     test.pwd()
 
@@ -13,10 +21,7 @@ node() {
     def lib = load "${library}"
     lib.test()
 
-    // Tets the class invocation from shared library
-    def obj = org.foo.Point()
-    obj.setX(3)
-    println(obj.getX())
+ 
 
     Animal {
         food = 'meat'
