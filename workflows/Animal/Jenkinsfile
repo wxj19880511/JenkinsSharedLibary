@@ -11,6 +11,14 @@ node() {
         food = 'meat'
     }
 
+    executeStage {
+        name = "Test"
+        cmd = {
+            echo "This is only a basic test"
+            sh " ls -alt"
+        }
+    }
+
     executeWithDocker {
         log.warning "Please do not let it go"
     }
