@@ -1,5 +1,5 @@
 class Test {
-    static def test() {
+    static def main() {
         println("My favoriate")
         println("using the groovy class")
         println("++++++++++")
@@ -9,7 +9,7 @@ class Test {
 def test() {
     obj = new Test()
     println("--------------")
-    obj.test()
+    obj.main()
     println("-------------")
 }
 
