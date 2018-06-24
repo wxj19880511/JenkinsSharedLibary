@@ -10,10 +10,7 @@ def call(Closure body) {
                                   ${config.name}                                
     ==========================================================================
     """)
-    println(config.name)
-    println(config.cmd)
-
     stage(config.name) {
-        config.cmd()
+        config.cmd.call()
     }
 }
