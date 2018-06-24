@@ -1,0 +1,3 @@
+[submodule "QTConfiguration"]
+	path = QTConfiguration
+	url = https://github.com/wxj19880511/QTConfiguration.git
