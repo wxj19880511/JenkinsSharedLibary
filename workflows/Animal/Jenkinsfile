@@ -9,38 +9,19 @@ node() {
     }
 
     executeWithDocker {
-
-        executeStage {
-            name = "Test"
-            cmd = {
-                echo "This is only a basic test"
-                sh " ls -alt"
-            }
+        executeStage("Test") {
+            echo "This is only a basic test"
+            sh " ls -alt"      
         }
 
-        executeStage {
-            name = "Build"
-            cmd = {
-                echo "This is only a basic test"
-                sh " ls -alt"
-            }
+        executeStage("Build") {
+            echo "This is only a basic test"
+            sh " ls -alt"      
         }
 
-        executeStage {
-            name = "Deploy"
-            cmd = {
-                echo "This is only a basic test"
-                sh " ls -alt"
-            }
+        executeStage("Deploy") {
+            echo "This is only a basic test"
+            sh " ls -alt"   
         }
-
-        executeStage {
-            name = "Notify"
-            cmd = {
-                echo "This is only a basic test"
-                sh " ls -alt"
-            }
-        }
-
     }
 }
