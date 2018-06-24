@@ -4,8 +4,7 @@ node() {
     test = new org.foo.Test()
     test.pwd()
 
-    sh "find . | grep groovy"
-
+    sh "ls -alt"
     def library = pwd() + '/workflows/Animal/library/Animal.groovy'
     lib = load(library)
 
