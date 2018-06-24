@@ -4,6 +4,6 @@ def call(Closure body) {
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
 
-    checgit branch: 'develop', credentialsId: 'github', url: 'https://github.com/wxj19880511/JenkinsSharedLibary'
-kout
+   git branch: 'develop', changelog: false, credentialsId: 'github', poll: false, url: 'https://github.com/wxj19880511/JenkinsSharedLibary'
+
 }
