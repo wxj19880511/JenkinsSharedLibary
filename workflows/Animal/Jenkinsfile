@@ -3,7 +3,7 @@ node() {
  
     test = new org.foo.Test()
     test.pwd()
-    
+
     Animal {
         food = 'meat'
     }
@@ -16,7 +16,7 @@ node() {
         }
     }
 
-    executeWithDocker {
-        log.warning "Please do not let it go"
+    executeStage {
+        log.info "Please do not let it go"
     }
 }
