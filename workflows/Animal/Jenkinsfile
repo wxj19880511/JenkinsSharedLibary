@@ -1,5 +1,10 @@
 
 node() {
+
+    executeStage("Checkout Source") {
+        checkoutSrouce()
+    }
+
  
     test = new org.foo.Test()
     test.pwd()
@@ -13,11 +18,6 @@ node() {
     }
 
     executeWithDocker {
-
-      executeStage("Checkout Source") {
-            checgit branch: 'develop', credentialsId: 'github', url: 'https://github.com/wxj19880511/JenkinsSharedLibary'
-kout
-        }
 
         executeStage("Test") {
             echo "This is only a basic test"
