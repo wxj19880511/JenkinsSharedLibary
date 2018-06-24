@@ -8,8 +8,32 @@ node() {
         food = 'meat'
     }
 
-    executeStage("test") {
+    executeStage {
         name = "Test"
+        cmd = {
+            echo "This is only a basic test"
+            sh " ls -alt"
+        }
+    }
+
+    executeStage {
+        name = "Build"
+        cmd = {
+            echo "This is only a basic test"
+            sh " ls -alt"
+        }
+    }
+
+    executeStage {
+        name = "Deploy"
+        cmd = {
+            echo "This is only a basic test"
+            sh " ls -alt"
+        }
+    }
+
+    executeStage {
+        name = "Notify"
         cmd = {
             echo "This is only a basic test"
             sh " ls -alt"
