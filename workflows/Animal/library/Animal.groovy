@@ -1,6 +1,6 @@
 class Test {
     def test() {
-        echo "using the groovy class"
+        println("using the groovy class")
     }
 }
 
