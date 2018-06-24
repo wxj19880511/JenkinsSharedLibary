@@ -9,6 +9,6 @@ def call(Closure body) {
     println(config.cmd)
 
     stage(config.name) {
-        config.cmd
+        config.cmd()
     }
 }
