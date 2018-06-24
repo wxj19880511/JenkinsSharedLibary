@@ -3,13 +3,20 @@ package org.foo
 
 // point in 3D space
 class Point implements Serializable {
-  float x,y,z;
+    float x,y,z;
+    def steps;
 
-  def setX(x) {
-      x = x
-  }
+    Test(steps) {this.steps = steps}
 
-  def getX() {
-      return x;
-  }
+    def setX(x) {
+        this.x = x
+    }
+
+    def getX() {
+        return this.x;
+    }
+
+    def displayX() {
+        steps.sh "echo ${this.x}"
+    }
 }
