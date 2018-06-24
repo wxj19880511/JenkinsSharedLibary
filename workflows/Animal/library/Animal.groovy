@@ -9,7 +9,7 @@ class Test implements Serializable {
 }
 
 def test() {
-    obj = new Test()
+    obj = new Test(this)
     println("--------------")
     obj.main()
     println("-------------")
