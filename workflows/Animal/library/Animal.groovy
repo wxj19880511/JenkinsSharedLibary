@@ -1,5 +1,8 @@
-def test() {
-    echo "I want to make a test"
+class Test {
+    def test() {
+        echo "using the groovy class"
+    }
 }
+
 
 return this
