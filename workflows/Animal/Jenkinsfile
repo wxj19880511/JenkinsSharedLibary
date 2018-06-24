@@ -4,8 +4,8 @@ node() {
     test = new org.foo.Test()
     test.pwd()
 
-    def PWD = pwd() + 'workflows/Animal/library/Animal.groovy'
-    lib = load("/library/Animal.groovy")
+    def library = pwd() + 'workflows/Animal/library/Animal.groovy'
+    lib = load(library)
 
     Animal {
         food = 'meat'
