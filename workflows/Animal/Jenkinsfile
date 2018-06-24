@@ -12,28 +12,17 @@ node() {
         lib.test()
     }
 
-
     executeStage("Test shared library class") {
         def obj = new org.foo.Point(this)
         obj.setX(3)
         println(obj.getX())
         obj.displayX()
-    }
-
- 
-
-    Animal {
-        food = 'meat'
+        Animal {
+            food = 'meat'
+        }
     }
 
     executeWithDocker {
-
-        executeStage("Test") {
-            echo "This is only a basic test"
-            sh " ls -alt"    
-            lib.test()  
-        }
-
         executeStage("Build") {
             echo "This is only a basic test"
             sh " ls -alt"      
