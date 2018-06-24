@@ -14,11 +14,10 @@ node() {
 
 
     executeStage("Test shared library class") {
-        def test = new org.foo.Point(this)
-        test.pwd()
-            def obj = org.foo.Point()
-            obj.setX(3)
-            println(obj.getX())
+        def obj = new org.foo.Point(this)
+        obj.setX(3)
+        println(obj.getX())
+        obj.displayX()
     }
 
  
