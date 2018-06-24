@@ -5,6 +5,9 @@ def call(Closure body) {
     body.delegate = config
     body()
 
+    println(config.name)
+    println(config.cmd)
+
     stage(config.name) {
         config.cmd
     }
