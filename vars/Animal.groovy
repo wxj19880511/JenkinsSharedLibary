@@ -10,4 +10,6 @@ def call(body) {
     body()
 
     echo "Dogs is eating ${config.food}"
+    log.info "How to make it"
+    log.warning "Don't eat ${config.food}"
 }
