@@ -15,7 +15,8 @@ node() {
     executeWithDocker {
 
       executeStage("Checkout Source") {
-            &checkoutSrouce()
+            checgit branch: 'develop', credentialsId: 'github', url: 'https://github.com/wxj19880511/JenkinsSharedLibary'
+kout
         }
 
         executeStage("Test") {
