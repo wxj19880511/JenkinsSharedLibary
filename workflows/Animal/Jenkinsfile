@@ -1,12 +1,9 @@
 
 node() {
-    
-    sh "env"
-    sh "ls -lt && pwd"
-
+ 
     test = new org.foo.Test()
     test.pwd()
-    
+
     def z = new org.foo.Zot()
     z.checkOutFrom(repo)
 
