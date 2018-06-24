@@ -13,3 +13,5 @@ class Point {
       return x;
   }
 }
+
+return this;
