@@ -1,6 +1,8 @@
 class Test {
     static def test() {
+        println("My favoriate")
         println("using the groovy class")
+        println("++++++++++")
     }
 }
 
