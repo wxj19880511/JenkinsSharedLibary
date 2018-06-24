@@ -1,8 +1,10 @@
-class Test {
-    static def main() {
-        println("My favoriate")
-        println("using the groovy class")
-        println("++++++++++")
+class Test implements Serializable {
+    def steps
+
+    Test(steps) {this.steps = steps}
+
+    def main() {
+        step.sh "ls && pwd"    
     }
 }
 
