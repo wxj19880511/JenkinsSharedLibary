@@ -9,7 +9,7 @@ node() {
     }
 
     executeWithDocker {
-        
+
         executeStage {
             name = "Test"
             cmd = {
