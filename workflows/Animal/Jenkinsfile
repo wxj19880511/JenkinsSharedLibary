@@ -15,7 +15,7 @@ node() {
     executeWithDocker {
 
       executeStage("Checkout Source") {
-            checkoutSrouce()
+            &checkoutSrouce()
         }
 
         executeStage("Test") {
