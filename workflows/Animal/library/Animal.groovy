@@ -4,7 +4,7 @@ class Test implements Serializable {
     Test(steps) {this.steps = steps}
 
     def main() {
-        step.sh "ls && pwd"    
+        steps.sh "ls && pwd"    
     }
 }
 
