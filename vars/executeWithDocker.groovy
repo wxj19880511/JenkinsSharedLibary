@@ -6,6 +6,6 @@ def call(Closure body) {
     body()
 
     node("Docker") {
-        config.stage.call()
+        config.cmd.call()
     }
 }
