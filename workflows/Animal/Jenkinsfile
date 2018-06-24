@@ -12,16 +12,15 @@ node() {
         lib.test()
     }
 
-    
 
+    executeStage("Test shared library class") {
+        def test = new org.foo.Test()
+        test.pwd()
+            def obj = org.foo.Point()
+            obj.setX(3)
+            println(obj.getX())
+    }
 
- // Tets the class invocation from shared library
-
-    test = new org.foo.Test()
-    test.pwd()
-        def obj = org.foo.Point()
-        obj.setX(3)
-        println(obj.getX())
  
 
     Animal {
