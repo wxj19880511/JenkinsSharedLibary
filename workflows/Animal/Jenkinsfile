@@ -2,7 +2,7 @@
 node() {
 
     executeStage("Checkout Source") {
-        checkoutSrouce()
+        checkoutSource()
     }
 
  
