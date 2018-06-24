@@ -1,5 +1,5 @@
 class Test {
-    def test() {
+    static def test() {
         echo "using the groovy class"
     }
 }
