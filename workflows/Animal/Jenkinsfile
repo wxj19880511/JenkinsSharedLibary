@@ -10,7 +10,7 @@ node() {
 
     sh "ls -alt"
     def library = pwd() + '/workflows/Animal/library/Animal.groovy'
-    lib = load "${library}"
+    def lib = load "${library}"
     lib.test()
 
     Animal {
