@@ -4,6 +4,5 @@ def call(Closure body) {
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
 
-   git branch: 'develop', changelog: false, credentialsId: 'github', poll: false, url: 'https://github.com/wxj19880511/JenkinsSharedLibary'
-
+    checkout([$class: 'GitSCM', branches: [[name: '*/develop']], browser: [$class: 'GithubWeb', repoUrl: 'https://github.com/wxj19880511/JenkinsSharedLibary.git'], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'ScmName', name: 'JenkinsSharedLibrary']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/wxj19880511/JenkinsSharedLibary.git']]])
 }
