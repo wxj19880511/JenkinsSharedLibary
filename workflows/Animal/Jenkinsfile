@@ -3,10 +3,7 @@ node() {
  
     test = new org.foo.Test()
     test.pwd()
-
-    def z = new org.foo.Zot()
-    z.checkOutFrom(repo)
-
+    
     Animal {
         food = 'meat'
     }
