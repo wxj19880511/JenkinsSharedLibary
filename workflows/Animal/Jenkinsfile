@@ -16,7 +16,5 @@ node() {
         }
     }
 
-    executeStage {
-        log.info "Please do not let it go"
-    }
+
 }
