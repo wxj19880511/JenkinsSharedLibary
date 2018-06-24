@@ -5,7 +5,7 @@ def call(String name, Closure body) {
     body.delegate = config
 
 
-    stage(name) {
+    stage(config.name) {
         println("""
         ==========================================================================
                                     ${config.name}                                
