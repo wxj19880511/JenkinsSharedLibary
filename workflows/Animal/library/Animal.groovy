@@ -6,7 +6,9 @@ class Test {
 
 def test() {
     obj = new Test()
+    println("--------------")
     obj.test()
+    println("-------------")
 }
 
 
