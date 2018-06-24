@@ -5,5 +5,7 @@ def call(Closure body) {
     body.delegate = config
     body()
 
-    log.warning "Let it go"
+    node("Docker") {
+        config.stage.call()
+    }
 }
