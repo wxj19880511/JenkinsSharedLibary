@@ -4,7 +4,7 @@ node() {
     test = new org.foo.Test()
     test.pwd()
 
-    def library = pwd() + 'workflows/Animal/library/Animal.groovy'
+    def library = pwd() + '/workflows/Animal/library/Animal.groovy'
     lib = load(library)
 
     Animal {
