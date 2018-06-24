@@ -5,6 +5,11 @@ def call(Closure body) {
     body.delegate = config
     body()
 
+    println("""
+    =================================================================
+                              ${config.name}
+    =================================================================
+    """)
     println(config.name)
     println(config.cmd)
 
