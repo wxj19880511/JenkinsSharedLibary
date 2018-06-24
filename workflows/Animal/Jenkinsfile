@@ -4,8 +4,8 @@ node() {
     test = new org.foo.Test()
     test.pwd()
 
-    def PWD = pwd()
-    lib = load "${PWD}/library/Animal.groovy"
+    def PWD = getClass().protectionDomain.codeSource.location.path
+    lib = load("${PWD}/library/Animal.groovy")
 
     Animal {
         food = 'meat'
