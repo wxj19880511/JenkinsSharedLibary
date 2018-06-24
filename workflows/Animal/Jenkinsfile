@@ -1,5 +1,7 @@
 
 node() {
     sh "env"
-    Animal food: 'meat'
+    Animal {
+        food = 'meat'
+    }
 }
